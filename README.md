@@ -1,3 +1,51 @@
+# Marvel Store
+
+La idea es poder hacer un carrito de compra de productos Marvel, con la utilización de la API de Marvel para obtener la información necesaria.
+
+Lo primero es crear una aplicación en React, para esto ejecutamos el siguiente comando:
+
+`npx create-react-app marvel-store`
+
+Dentro de la carpeta `marvel-store` nos creará toda la estructura básica para nuestra aplicación.
+
+para poder verificar que el script realizo todo correctamente dentro de la carpeta del proyecto corremos el comando:
+
+`npm start`
+
+y verificamos que en el navegador este disponible la pantalla de bienvenidad de react para la aplicación.
+
+# React-Boostrap
+
+Instalamos el framework Boostrap adaptado para su utilización en React,
+
+`npm install react-bootstrap bootstrap`
+
+Luego para poder utilizar los estilos CSS de framework debemos realizar un `import` dentro del archivo `index.js` así afecta a todos los demas componentes que serán invocados desde nuestra aplicación.
+
+`import 'bootstrap/dist/css/bootstrap.min.css';`
+
+# Iconos
+
+Para poder utilizar iconos de manera mas fluida, podemos hacer uso de react-icons
+
+`npm install react-icons --save`
+
+# Varias páginas
+
+Para poder contar con varias páginas en nuestra aplicacion vamos a instalar el módulo `react-router-dom` que nos permite tener un mecanismo para mostrar los diferentes componentes en la aplicación, para esto ejecutamos el siguiente comando:
+
+`npm i react-router-dom`
+
+# Marvel API
+
+Para utilizar la API de Marvel debemos tener la capacidad de hashear en md5 por lo que tenemos que instalar el modulo correspondiente con el siguiente comando:
+
+`npm install md5`
+
+Debemos realizar el md5 de la concatenacion en texto de un timestamp, la private key y la public key. Una vez realizado este proceso se conforma la url según las especificaciones de la API, como sigue:
+
+`[apiURL]?ts=' + TIMESTAMP + '&apikey=' + PUBLIC_KEY + '&hash=' + HASH'`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
