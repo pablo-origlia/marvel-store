@@ -76,7 +76,7 @@ function App() {
             envioExpress: Math.random() < 0.2,
           };
         });
-      console.log('data', data);
+      console.log(' data', data);
       //set Personajes en el hook State de la lista de productos
       setPersonajes(data);
     };
