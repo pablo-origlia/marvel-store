@@ -70,7 +70,7 @@ const Header = ({ productos, changuito, agregarProducto }) => {
             />
             <Badge bg='success'>{changuito.length}</Badge>
           </DropdownToggle>
-          <DropdownMenu style={{ minWidth: 370 }}>
+          <DropdownMenu style={{ minWidth: 300 }}>
             {changuito.length > 0 ? (
               <>
                 {changuito.map((p) => (
